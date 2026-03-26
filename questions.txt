@@ -1,0 +1,25 @@
+Which search method was fastest/slowest and why? (Relate to Big-O.)
+	
+	IBS is by far the fastest, with sequential being the slowest.
+Seq is O(N) so at larger data sizes it struggles.
+Both binary search algorithms have O(log n) time. Even at N=1000000 it takes ~10-20 microseconds because log base 2 of 1000000 is about 20.
+
+Which binary search variant was faster? Why, even with the same Big-O?
+
+	Iterative is ~1.5-2x faster even though they have the same time complexity because recurisve methods must deal with function call overhead. Each level of recursion adds a new function call which is more memory intesive than an additional loop iteration.
+
+Compare the execution times for N = 5000 with N = 1000000 and provide a reason for the differences. 
+	
+	It is immediately obvious that a larger sample size will increase run times for a sequential search if the target is not one of the first elements.
+
+Why might sequential search find a target at a different location?
+
+	If a target is present at multiple indexes a sequential search might find it at an earlier point than other search algorithms.
+
+What was the most challenging part of this project?
+
+	Organizing the data after analysis.
+
+What did you learn?
+
+	I learned how to measure algorithm performance with pythons time module and perf_counter.
