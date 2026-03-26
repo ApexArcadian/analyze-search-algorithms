@@ -1,1 +1,7 @@
 i setup the two branches according to the instructions and now begins the real work
+
+created rate-of-growth from random numbers branch
+
+part of me is thinking instead of using a freshly generated list every single time i should just use ONE single list with known indexes etc so i can test more accurately.
+
+oh no wait that defeats the purpose of testing more cases
